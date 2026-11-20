@@ -1,0 +1,94 @@
+.orbitwell-visual {
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(52, 139, 255, .38), transparent 34%),
+    linear-gradient(145deg, #070d18 0%, #0e1b36 56%, #07101e 100%);
+}
+
+.orbitwell-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .22;
+  background-image:
+    linear-gradient(rgba(111, 175, 255, .25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 175, 255, .25) 1px, transparent 1px);
+  background-size: 42px 42px;
+  transform: perspective(500px) rotateX(60deg) scale(1.5) translateY(22%);
+}
+
+.orbitwell-glow {
+  position: absolute;
+  width: 55%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #168cff;
+  filter: blur(70px);
+  opacity: .32;
+}
+
+.orbitwell-visual img {
+  width: min(64%, 480px);
+  max-height: 92%;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 28px 28px rgba(0, 0, 0, .48));
+}
+
+.orbitwell-visual .project-index {
+  position: absolute;
+  right: 1.4rem;
+  bottom: .3rem;
+  z-index: 3;
+  color: rgba(255, 255, 255, .15);
+  font: 700 clamp(4rem, 9vw, 8rem) Manrope, sans-serif;
+}
+
+.orbitwell-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-copy .project-detail {
+  color: #8f9389;
+  font-size: .94rem;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.project-actions a {
+  padding: .72rem 1rem;
+  border: 1px solid #686b62;
+  font: 500 .72rem DM Mono, monospace;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.project-actions a:first-child {
+  background: var(--acid);
+  border-color: var(--acid);
+  color: var(--ink);
+}
+
+.project-actions a:hover {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .orbitwell-visual img {
+    width: min(78%, 340px);
+  }
+
+  .orbitwell-copy {
+    min-height: 0;
+  }
+}

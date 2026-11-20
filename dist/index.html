@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="about-profile.css" />
   <link rel="stylesheet" href="skills-profile.css" />
   <link rel="stylesheet" href="education-profile.css" />
+  <link rel="stylesheet" href="project-profile.css" />
 </head>
 <body>
   <a class="skip-link" href="#work">Skip to projects</a>
@@ -44,13 +45,27 @@
 
     <section class="work section-pad" id="work">
       <div class="section-heading reveal">
-        <div><p class="eyebrow">SELECTED WORK</p><h2>Projects in progress.</h2></div>
-        <p class="section-note">A home for the things I’m building, learning, and experimenting with. Project details will be added soon.</p>
+        <div><p class="eyebrow">SELECTED WORK</p><h2>Projects with purpose.</h2></div>
+        <p class="section-note">Things I’ve built to explore real problems, test ideas, and turn research into practical experiences.</p>
       </div>
       <div class="project-grid">
         <article class="project-card project-primary reveal">
-          <div class="project-visual"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><b>01</b></div>
-          <div class="project-copy"><p class="eyebrow">FEATURED PROJECT · COMING SOON</p><h3>Your first big idea</h3><p>Use this space for the project that best shows how you think, solve problems, and bring an idea to life.</p><div class="tags"><span>Research</span><span>Design</span><span>Development</span></div></div>
+          <div class="project-visual orbitwell-visual">
+            <span class="orbitwell-glow"></span>
+            <img src="assets/orbitwell-companion.png" alt="ORBIT, the OrbitWell NASA research companion" />
+            <b class="project-index">01</b>
+          </div>
+          <div class="project-copy orbitwell-copy">
+            <p class="eyebrow">FEATURED PROJECT · RESEARCH DEMO</p>
+            <h3>OrbitWell</h3>
+            <p>An astronaut-wellbeing platform that turns synthetic wearable and dosimeter data into personal trends, movement check-ins, and stage-aware guidance before, during, and after a mission.</p>
+            <p class="project-detail">Includes a 3D interactive body viewer, a synthetic ground-team dashboard, and ORBIT—an AI research assistant grounded in official NASA sources.</p>
+            <div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Three.js</span><span>AI</span></div>
+            <div class="project-actions">
+              <a href="https://orbitwell-theta.vercel.app/" target="_blank" rel="noreferrer">View live</a>
+              <a href="https://github.com/theYE-8266-viren-Nai/HEXARA" target="_blank" rel="noreferrer">View source</a>
+            </div>
+          </div>
         </article>
         <article class="project-card reveal">
           <div class="project-visual visual-two"><span class="pixel-grid"></span><b>02</b></div>
