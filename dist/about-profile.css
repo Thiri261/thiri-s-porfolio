@@ -1,34 +1,41 @@
-.about-grid {
-  grid-template-columns: 1.08fr .72fr;
-  gap: 7vw;
-  align-items: start;
+.about {
+  padding-top: 5.5rem;
+  padding-bottom: 4rem;
+  background: var(--paper);
 }
 
-.about-copy {
-  max-width: 690px;
-  margin-top: 4rem;
+.about-kicker {
+  margin-bottom: .75rem;
+  color: #303229;
+}
+
+.about .about-title {
+  margin: 0;
+  font-size: clamp(3rem, 5.8vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.065em;
+}
+
+.about-statement {
+  max-width: 1040px;
+  margin: 3.2rem 0 2.7rem;
+  font-size: clamp(1.14rem, 2vw, 1.55rem);
+  line-height: 1.5;
+  letter-spacing: -.025em;
 }
 
 .profile-card {
+  width: min(400px, 100%);
   margin: 0;
-  position: sticky;
-  top: 2rem;
 }
 
 .profile-frame {
-  position: relative;
-  overflow: hidden;
-  background: var(--acid);
+  width: 100%;
   aspect-ratio: 4 / 5;
-}
-
-.profile-frame::before {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border: 1px solid rgba(255, 255, 255, .65);
-  z-index: 2;
-  pointer-events: none;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  background: #d6d4ca;
 }
 
 .profile-frame img {
@@ -37,40 +44,27 @@
   display: block;
   object-fit: cover;
   object-position: center 42%;
-  filter: saturate(.92) contrast(1.03);
-  transition: transform .6s ease;
-}
-
-.profile-card:hover img {
-  transform: scale(1.025);
 }
 
 .profile-card figcaption {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: .9rem 0;
-  border-bottom: 1px solid var(--line);
-  font: 500 .67rem DM Mono, monospace;
-  letter-spacing: .06em;
-}
-
-.profile-card figcaption span:last-child {
-  color: var(--muted);
-  text-align: right;
+  padding-top: .8rem;
+  color: #5b5d54;
+  font: 500 .76rem DM Mono, monospace;
+  letter-spacing: .09em;
+  text-transform: uppercase;
 }
 
 @media (max-width: 800px) {
-  .about-grid {
-    grid-template-columns: 1fr;
+  .about {
+    padding-top: 4.5rem;
   }
 
-  .about-copy {
+  .about-statement {
     margin-top: 2.5rem;
+    line-height: 1.55;
   }
 
   .profile-card {
-    position: static;
-    max-width: 560px;
+    width: min(440px, 100%);
   }
 }
