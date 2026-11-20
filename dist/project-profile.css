@@ -1,5 +1,5 @@
 .project-grid {
-  gap: clamp(2.5rem, 5vw, 4.5rem);
+  gap: clamp(5rem, 8vw, 8rem);
   background: transparent;
 }
 
