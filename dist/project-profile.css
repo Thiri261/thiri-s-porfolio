@@ -3,6 +3,12 @@
   background: #070d14;
 }
 
+.project-grid > .project-card:not(.project-primary) {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .orbitwell-visual::before {
   content: "";
   position: absolute;
@@ -146,6 +152,10 @@
 }
 
 @media (max-width: 800px) {
+  .project-grid > .project-card:not(.project-primary) {
+    display: block;
+  }
+
   .orbitwell-visual img {
     width: 100%;
   }
