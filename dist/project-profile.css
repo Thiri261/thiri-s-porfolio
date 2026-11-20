@@ -3,6 +3,14 @@
   background: #070d14;
 }
 
+.project-primary {
+  height: 720px;
+}
+
+.project-primary > .project-visual {
+  height: 100%;
+}
+
 .orbitwell-visual::before {
   content: "";
   position: absolute;
@@ -147,6 +155,14 @@
 }
 
 @media (max-width: 800px) {
+  .project-primary {
+    height: auto;
+  }
+
+  .project-primary > .project-visual {
+    height: 320px;
+  }
+
   .orbitwell-visual img {
     width: 100%;
   }
