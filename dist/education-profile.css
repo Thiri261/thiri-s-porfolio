@@ -1,0 +1,57 @@
+.education {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.education .eyebrow {
+  margin-bottom: .7rem;
+}
+
+.education-title {
+  margin: 0;
+  font-size: clamp(2.1rem, 4vw, 3.6rem);
+  line-height: 1;
+  letter-spacing: -.055em;
+}
+
+.education-record {
+  margin-top: 4.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.education-primary,
+.education-status {
+  padding: 1.45rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.education-primary h3,
+.education-status h4 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  line-height: 1.35;
+  letter-spacing: -.025em;
+}
+
+.education-primary p,
+.education-status p {
+  margin: .65rem 0 0;
+  color: var(--muted);
+  font: 400 .9rem DM Mono, monospace;
+  line-height: 1.5;
+}
+
+.education-status h4 {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+@media (max-width: 800px) {
+  .education-record {
+    margin-top: 3rem;
+  }
+
+  .education-primary,
+  .education-status {
+    padding: 1.25rem 0;
+  }
+}
