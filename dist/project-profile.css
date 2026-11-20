@@ -3,12 +3,6 @@
   background: #070d14;
 }
 
-.project-grid > .project-card:not(.project-primary) {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .orbitwell-visual::before {
   content: "";
   position: absolute;
@@ -26,15 +20,6 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-}
-
-.orbitwell-visual .project-index {
-  position: absolute;
-  right: 1.4rem;
-  bottom: .3rem;
-  z-index: 3;
-  color: rgba(255, 255, 255, .15);
-  font: 700 clamp(4rem, 9vw, 8rem) Manrope, sans-serif;
 }
 
 .orbitwell-copy {
@@ -138,24 +123,30 @@
   object-fit: cover;
 }
 
-.shaysett-visual .project-index {
-  position: absolute;
-  right: 1.4rem;
-  bottom: .3rem;
-  z-index: 3;
-  color: rgba(255, 255, 255, .3);
-  font: 700 clamp(4rem, 9vw, 8rem) Manrope, sans-serif;
-}
-
 .shaysett-copy .project-meta div {
   grid-template-columns: 72px minmax(0, 1fr);
 }
 
-@media (max-width: 800px) {
-  .project-grid > .project-card:not(.project-primary) {
-    display: block;
-  }
+.havenmatch-visual {
+  background: #eef6f2;
+}
 
+.havenmatch-visual img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.havenmatch-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
   .orbitwell-visual img {
     width: 100%;
   }
