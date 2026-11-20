@@ -43,21 +43,21 @@
 }
 
 .project-meta {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
   margin: 1.35rem 0 0;
-  padding: 1rem 0;
   border-top: 1px solid #3f423b;
-  border-bottom: 1px solid #3f423b;
 }
 
 .project-meta div {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
   min-width: 0;
+  padding: .82rem 0;
+  border-bottom: 1px solid #3f423b;
 }
 
 .project-meta dt {
-  margin-bottom: .35rem;
   color: #858980;
   font: 500 .65rem DM Mono, monospace;
   letter-spacing: .08em;
@@ -66,34 +66,83 @@
 .project-meta dd {
   margin: 0;
   color: var(--paper);
-  font-size: .88rem;
+  font-size: .82rem;
   line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
-.project-actions {
+.project-meta a {
+  color: #c0c4b9;
+  font-family: DM Mono, monospace;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: .22rem;
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+
+.project-meta a:hover {
+  color: var(--acid);
+  text-decoration-color: currentColor;
+}
+
+.project-link-line {
   display: flex;
   flex-wrap: wrap;
-  gap: .75rem;
-  margin-top: 2rem;
+  align-items: center;
+  gap: .7rem 1rem;
 }
 
-.project-actions a {
-  padding: .72rem 1rem;
-  border: 1px solid #686b62;
-  font: 500 .72rem DM Mono, monospace;
-  transition: background .2s ease, color .2s ease, border-color .2s ease;
-}
-
-.project-actions a:first-child {
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  padding: .3rem .65rem;
   background: var(--acid);
-  border-color: var(--acid);
   color: var(--ink);
+  font: 500 .68rem DM Mono, monospace;
+  letter-spacing: .12em;
 }
 
-.project-actions a:hover {
-  background: var(--paper);
-  border-color: var(--paper);
-  color: var(--ink);
+.live-badge i {
+  width: 7px;
+  height: 7px;
+  background: var(--ink);
+}
+
+.shaysett-visual {
+  isolation: isolate;
+  background: #edf5ef;
+}
+
+.shaysett-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(5, 21, 17, .68));
+}
+
+.shaysett-visual video {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shaysett-visual .project-index {
+  position: absolute;
+  right: 1.4rem;
+  bottom: .3rem;
+  z-index: 3;
+  color: rgba(255, 255, 255, .3);
+  font: 700 clamp(4rem, 9vw, 8rem) Manrope, sans-serif;
+}
+
+.shaysett-copy .project-meta div {
+  grid-template-columns: 72px minmax(0, 1fr);
 }
 
 @media (max-width: 800px) {
@@ -106,6 +155,11 @@
   }
 
   .project-meta {
-    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .project-meta div,
+  .shaysett-copy .project-meta div {
+    grid-template-columns: 72px minmax(0, 1fr);
   }
 }
