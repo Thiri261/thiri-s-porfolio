@@ -59,6 +59,24 @@
   border-color: rgba(242, 240, 232, .55);
 }
 
+.technical-groups {
+  display: grid;
+  gap: 1.15rem;
+  margin-top: auto;
+}
+
+.technical-group h4 {
+  margin: 0 0 .55rem;
+  color: var(--acid);
+  font: 500 .75rem DM Mono, monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.technical-group ul {
+  margin: 0;
+}
+
 .business-skills {
   background: var(--acid);
 }
@@ -83,5 +101,13 @@
 
   .skill-category ul {
     margin-top: 2rem;
+  }
+
+  .technical-groups {
+    margin-top: 0;
+  }
+
+  .technical-group ul {
+    margin-top: 0;
   }
 }
