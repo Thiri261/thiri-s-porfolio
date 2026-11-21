@@ -53,22 +53,22 @@
   gap: .7rem;
 }
 
-.skill-cluster {
+.technical-skills .skill-cluster {
   min-width: 0;
   padding: .9rem;
-  border: 1px solid var(--acid);
+  border: 2px solid var(--acid);
   background: rgba(255, 255, 255, .025);
 }
 
-.skill-cluster:last-child {
+.technical-skills .skill-cluster:last-child {
   grid-column: 1 / -1;
 }
 
-.skill-cluster p {
+.technical-skills .skill-cluster p {
   margin: 0;
 }
 
-.skill-cluster .cluster-label {
+.technical-skills .skill-cluster .cluster-label {
   display: flex;
   align-items: center;
   gap: .5rem;
@@ -85,7 +85,7 @@
   background: var(--acid);
 }
 
-.skill-cluster > p:last-child {
+.technical-skills .skill-cluster > p:last-child {
   color: #c5c8be;
   font-size: .82rem;
   line-height: 1.55;
