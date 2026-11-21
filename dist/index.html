@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="skills-profile.css" />
   <link rel="stylesheet" href="education-profile.css" />
   <link rel="stylesheet" href="project-profile.css" />
+  <link rel="stylesheet" href="contact-profile.css" />
 </head>
 <body>
   <a class="skip-link" href="#work">Skip to projects</a>
@@ -31,7 +32,7 @@
   <main>
     <section class="hero" id="top">
       <p class="eyebrow reveal">STUDENT · EXPLORER · BUILDER</p>
-      <h1 class="reveal">I’m learning to build<br><span>ideas that matter.</span></h1>
+      <h1 class="reveal">I build practical solutions<br><span>for real-world problems.</span></h1>
       <div class="hero-bottom reveal">
         <p class="intro">I’m Thiri Thu, a third-year Knowledge Engineering undergraduate at the University of Information Technology. I explore real-world problems through web development, AI, and business-minded innovation.</p>
         <a class="circle-link" href="#work" aria-label="Explore my work"><span>Explore<br>my work</span></a>
@@ -56,6 +57,7 @@
             </video>
           </div>
           <div class="project-copy orbitwell-copy">
+            <span class="project-index" aria-hidden="true">01</span>
             <p class="eyebrow">HACKATHON PROJECT · HEALTH MONITORING SYSTEM FOR ASTRONAUTS · NASA SPACE APPS CHALLENGE 2026</p>
             <h3>OrbitWell</h3>
             <p>An astronaut-wellbeing platform that turns synthetic wearable and dosimeter data into personal trends, movement check-ins, and stage-aware guidance before, during, and after a mission.</p>
@@ -63,7 +65,7 @@
             <dl class="project-meta">
               <div><dt>ROLE</dt><dd>Front-end Developer, team of 5</dd></div>
               <div><dt>STATUS</dt><dd class="project-link-line"><span class="live-badge"><i></i> LIVE</span><a href="https://orbitwell-theta.vercel.app/" target="_blank" rel="noreferrer">orbitwell-theta.vercel.app</a></dd></div>
-              <div><dt>STACK</dt><dd>React · TypeScript · Supabase · Three.js · AI</dd></div>
+              <div class="stack-row"><dt>STACK</dt><dd class="stack-list"><span>React</span><span>TypeScript</span><span>Supabase</span><span>Three.js</span><span>AI</span></dd></div>
               <div><dt>SOURCE</dt><dd><a href="https://github.com/theYE-8266-viren-Nai/HEXARA" target="_blank" rel="noreferrer">github.com/theYE-8266-viren-Nai/HEXARA</a></dd></div>
             </dl>
           </div>
@@ -75,22 +77,24 @@
             </video>
           </div>
           <div class="project-copy shaysett-copy">
-            <p class="eyebrow">UXMM INTO THE AI OCEAN · WINNING PROJECT</p>
+            <span class="project-index" aria-hidden="true">02</span>
+            <p class="eyebrow">UXMM INTO THE AI OCEAN · BUILDATHON · WINNING PROJECT</p>
             <h3>Shay Sett</h3>
             <p>A cash-flow and credit-readiness platform for Myanmar SMEs that turns structured workbook data into financial-health insights, working-capital planning, credit tools, and consent-based AI analysis.</p>
             <dl class="project-meta">
               <div><dt>ROLE</dt><dd>Business Analyst</dd></div>
               <div><dt>STATUS</dt><dd class="project-link-line"><span class="live-badge"><i></i> LIVE</span><a href="https://shaysett-team4.vercel.app/" target="_blank" rel="noreferrer">shaysett-team4.vercel.app</a></dd></div>
-              <div><dt>STACK</dt><dd>React · TypeScript · FastAPI · Supabase · TanStack</dd></div>
+              <div class="stack-row"><dt>STACK</dt><dd class="stack-list"><span>React</span><span>TypeScript</span><span>FastAPI</span><span>Supabase</span><span>TanStack</span></dd></div>
               <div><dt>SOURCE</dt><dd><a href="https://github.com/Aidan226/UXMM_HACKATHON_SME_CREDIT" target="_blank" rel="noreferrer">github.com/Aidan226/UXMM_HACKATHON_SME_CREDIT</a></dd></div>
             </dl>
           </div>
         </article>
         <article class="project-card project-primary reveal">
           <div class="project-visual havenmatch-visual">
-            <img src="assets/havenmatch-interface.png" alt="HavenMatch AI sign-in interface and product benefits" />
+            <img src="assets/havenmatch-homepage.png" alt="HavenMatch AI homepage for matching homes and land in Yangon" />
           </div>
           <div class="project-copy havenmatch-copy">
+            <span class="project-index" aria-hidden="true">03</span>
             <p class="eyebrow">AI PROPERTY MATCHING PLATFORM</p>
             <h3>HavenMatch AI</h3>
             <p>A housing and land matching platform that helps people rent or buy with more confidence. Adaptive questionnaires turn budget, location, property, and lifestyle preferences into ranked recommendations with clear reasons for every match.</p>
@@ -98,7 +102,7 @@
             <dl class="project-meta">
               <div><dt>ROLE</dt><dd>Team Lead</dd></div>
               <div><dt>FOCUS</dt><dd>Explainable AI · Housing and land discovery</dd></div>
-              <div><dt>STACK</dt><dd>React · Vite · Node.js · SWI-Prolog</dd></div>
+              <div class="stack-row"><dt>STACK</dt><dd class="stack-list"><span>React</span><span>Vite</span><span>Node.js</span><span>SWI-Prolog</span></dd></div>
               <div><dt>SOURCE</dt><dd><a href="https://github.com/Thiri261/HavenMatch-AI" target="_blank" rel="noreferrer">github.com/Thiri261/HavenMatch-AI</a></dd></div>
             </dl>
           </div>
@@ -108,6 +112,7 @@
             <img src="assets/surplushub-impact.png" alt="SurplusHub circular marketplace impact dashboard for Myanmar" />
           </div>
           <div class="project-copy surplushub-copy">
+            <span class="project-index" aria-hidden="true">04</span>
             <p class="eyebrow">CIRCULAR B2B MARKETPLACE · CURSOR AI HACKATHON MYANMAR</p>
             <h3>SurplusHub</h3>
             <p>An AI-powered circular B2B marketplace that connects Myanmar businesses with surplus, reusable, and recyclable industrial materials to buyers who can put them back into productive use.</p>
@@ -115,8 +120,26 @@
             <dl class="project-meta">
               <div><dt>ROLE</dt><dd>Front-End Developer</dd></div>
               <div><dt>FOCUS</dt><dd>Circular economy · B2B material exchange</dd></div>
-              <div><dt>STACK</dt><dd>React · TypeScript · TanStack · Supabase · Tailwind CSS</dd></div>
+              <div class="stack-row"><dt>STACK</dt><dd class="stack-list"><span>React</span><span>TypeScript</span><span>TanStack</span><span>Supabase</span><span>Tailwind CSS</span></dd></div>
               <div><dt>SOURCE</dt><dd><a href="https://github.com/hydnmyo/surplushub" target="_blank" rel="noreferrer">github.com/hydnmyo/surplushub</a></dd></div>
+            </dl>
+          </div>
+        </article>
+        <article class="project-card project-primary reveal">
+          <div class="project-visual coach-visual">
+            <iframe src="assets/coach-mockup.html" title="AceInterview mock interviewer interface preview" tabindex="-1"></iframe>
+          </div>
+          <div class="project-copy coach-copy">
+            <span class="project-index" aria-hidden="true">05</span>
+            <p class="eyebrow">SCHOOL PROJECT · JAVA &amp; SPRING BOOT</p>
+            <h3>Coach Mock Interviewer</h3>
+            <p>A mock-interview and coaching platform designed for technical roles. Users can choose a career track, configure company-style practice sessions, answer timed questions, and review scored feedback.</p>
+            <p class="project-detail">The experience also includes interview history, progress reports, question-by-question results, and an administration area for managing interview content.</p>
+            <dl class="project-meta">
+              <div><dt>ROLE</dt><dd>Front-End Developer</dd></div>
+              <div><dt>FOCUS</dt><dd>Interview practice · Feedback and progress tracking</dd></div>
+              <div class="stack-row"><dt>STACK</dt><dd class="stack-list"><span>Java</span><span>Spring Boot</span><span>HTML</span><span>CSS</span><span>JavaScript</span></dd></div>
+              <div><dt>SOURCE</dt><dd><a href="https://github.com/Thiri261/Coach-Mock-Interviewer-System" target="_blank" rel="noreferrer">github.com/Thiri261/Coach-Mock-Interviewer-System</a></dd></div>
             </dl>
           </div>
         </article>
@@ -155,9 +178,13 @@
       <div class="skill-groups">
         <article class="skill-category technical-skills reveal">
           <header><p class="eyebrow">BUILD & ANALYZE</p><h3>Technical Skills</h3></header>
-          <ul>
-            <li>JavaScript</li><li>HTML &amp; CSS</li><li>Next.js</li><li>Express.js</li><li>Java</li><li>Python</li><li>MySQL</li><li>Arduino &amp; Hardware Prototyping</li><li>Data Analysis</li><li>Data Structures &amp; Algorithms</li><li>Object-Oriented Programming</li><li>Database Design &amp; Development</li><li>Networking Architecture &amp; Design</li>
-          </ul>
+          <div class="technical-grid">
+            <div class="skill-cluster"><p class="cluster-label"><i></i>Languages</p><p>JavaScript · Java · Python</p></div>
+            <div class="skill-cluster"><p class="cluster-label"><i></i>Web</p><p>HTML &amp; CSS · Next.js · Express.js</p></div>
+            <div class="skill-cluster"><p class="cluster-label"><i></i>Data</p><p>MySQL · Data Analysis · Database Design</p></div>
+            <div class="skill-cluster"><p class="cluster-label"><i></i>Foundations</p><p>Algorithms · OOP · Networking</p></div>
+            <div class="skill-cluster"><p class="cluster-label"><i></i>Hardware</p><p>Arduino &amp; Prototyping</p></div>
+          </div>
         </article>
         <article class="skill-category business-skills reveal">
           <header><p class="eyebrow">THINK &amp; PLAN</p><h3>Business &amp; Analytical Skills</h3></header>
@@ -176,10 +203,13 @@
 
     <section class="contact section-pad" id="contact">
       <p class="eyebrow reveal">LET’S CONNECT</p>
-      <h2 class="reveal">Have an opportunity,<br>a project, or just an idea?<br><span>Say hello.</span></h2>
+      <h2 class="reveal">Looking for a creative<br>collaborator?<br><span>Let’s work together.</span></h2>
       <div class="contact-bottom reveal">
-        <a href="mailto:your.email@example.com" data-placeholder-link>Email address coming soon</a>
-        <div class="socials"><a href="#" data-placeholder-link>LinkedIn</a><a href="#" data-placeholder-link>GitHub</a></div>
+        <div class="email-row">
+          <a class="email-link" href="mailto:thirithu261@gmail.com">thirithu261@gmail.com</a>
+          <button class="copy-email" type="button" data-email="thirithu261@gmail.com">Copy email</button>
+        </div>
+        <div class="socials"><a href="https://www.linkedin.com/in/thiri-thu-858721400" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/Thiri261" target="_blank" rel="noreferrer">GitHub</a></div>
       </div>
     </section>
   </main>

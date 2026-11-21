@@ -1,0 +1,63 @@
+.contact-bottom {
+  display: grid;
+  align-items: stretch;
+  gap: 2.5rem;
+  padding-top: 3rem;
+}
+
+.email-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.email-link {
+  border: 0;
+  font-size: clamp(1.35rem, 2.8vw, 2.7rem);
+  font-weight: 700;
+  letter-spacing: -.04em;
+  overflow-wrap: anywhere;
+}
+
+.copy-email {
+  min-width: 135px;
+  padding: 1.1rem 1.5rem;
+  border: 0;
+  background: var(--ink);
+  color: #fff;
+  cursor: pointer;
+  font: 700 .85rem Manrope, sans-serif;
+  transition: background .2s, color .2s;
+}
+
+.copy-email:hover,
+.copy-email:focus-visible {
+  background: var(--acid);
+  color: var(--ink);
+}
+
+.socials {
+  gap: .8rem;
+  font: 700 .85rem Manrope, sans-serif;
+}
+
+.socials a {
+  padding: .9rem 1.5rem;
+  border: 1px solid rgba(255,255,255,.7);
+  transition: background .2s, border-color .2s, color .2s;
+}
+
+.socials a:hover,
+.socials a:focus-visible {
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--ink);
+}
+
+@media (max-width: 800px) {
+  .email-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
