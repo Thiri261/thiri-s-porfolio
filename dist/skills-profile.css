@@ -16,6 +16,7 @@
 
 .technical-skills {
   grid-row: auto;
+  border-color: var(--acid);
 }
 
 .skill-category header {
@@ -55,7 +56,7 @@
 .skill-cluster {
   min-width: 0;
   padding: .9rem;
-  border: 1px solid rgba(185, 242, 39, .26);
+  border: 1px solid var(--acid);
   background: rgba(255, 255, 255, .025);
 }
 
