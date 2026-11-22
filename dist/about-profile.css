@@ -25,6 +25,19 @@
   letter-spacing: -.025em;
 }
 
+.university-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(17, 19, 15, .28);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+  transition: color .2s ease, text-decoration-color .2s ease;
+}
+
+.university-link:hover {
+  color: var(--blue);
+  text-decoration-color: rgba(50, 88, 255, .65);
+}
+
 .profile-card {
   width: min(400px, 100%);
   margin: 0;
